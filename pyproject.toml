@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "awsctx"
+version = "0.1.0"
+description = "Interactive AWS profile switcher — like kubectx for AWS SSO profiles"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+authors = [
+    { name = "Andy Martinez" },
+]
+keywords = ["aws", "cli", "profile", "switcher", "sso", "kubectx"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+awsctx = "awsctx.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/andymartinezot/awsctx"
+Repository = "https://github.com/andymartinezot/awsctx"
