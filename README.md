@@ -115,6 +115,13 @@ cd awsctx
 pip install -e .
 ```
 
+> **Note:** If you get `zsh: command not found: pip`, use `pip3` or the module form instead:
+> ```bash
+> pip3 install -e .
+> # or
+> python3 -m pip install -e .
+> ```
+
 ### Shell hook setup
 
 After installing, activate the shell hook so `awsctx` can export environment variables into your session:
